@@ -33,6 +33,7 @@ a{
 
 
 /* HLAVICKA */
+
 header{
     padding: 40px 15px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/island-hlavicka.jpg);
@@ -62,10 +63,10 @@ header{
     content: ' ';
     display: inline-block;
     position: absolute;
-    width: 20%;
+    width: 100px;
     height: 2px;
     background-color: #f5f5f5;
-    left: 40%;
+    left: calc(50% - 50px);
     top: 0;
     
 
@@ -108,7 +109,7 @@ h2::after{
     display: inline-block;
     position: absolute;
     height: 4px;
-    width: 15%;
+    width: 50px;
     background-color:blue;
     left: -15px;
     bottom: 0;
@@ -139,6 +140,7 @@ section p{
 /* FOTOGALERIE */
 .fotogalerie{
     padding-top: 60px;
+    padding-bottom: 20px;
 }
 .fotogalerie p{
     margin-bottom: 0;
@@ -162,7 +164,7 @@ footer{
    font-size: 12px; 
    color: gray;
    padding: 25px 0;
-   margin-top: 20px;
+   
 }
 footer a{
     color: grey;
@@ -178,8 +180,42 @@ footer a{
 
 
 
-@media screen and (max-width: 600px) {
-    body {
-      
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    .titulek {
+        font-size: 60px;
+        
+    }
+    .perex{
+        margin: 20px auto;
+        max-width: 100%;
+    }
+    .menu{
+        flex-direction: row;
+        font-size: 16px;
+    }
+    .menu li{
+        border-top: 1px solid silver;
+        border-right: 1px solid silver;
+    }
+    .menu li:last-child{
+        border-right: transparent;
+    }
+    .popisek{
+       display: none;
+    }
+    .fotogalerie{
+        padding-bottom: 0;
+    }
+    .galerie{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foto{
+        flex-basis: 50%;
+    }
+    .galerie img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
     }
   }
