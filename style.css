@@ -200,9 +200,17 @@ footer a{
     .menu li:last-child{
         border-right: transparent;
     }
-    .popisek{
-       display: none;
+    .img{
+        position: relative;
     }
+   
+    .img p{
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+       
+    }
+    
     .fotogalerie{
         padding-bottom: 0;
     }
@@ -210,6 +218,9 @@ footer a{
         display: flex;
         flex-wrap: wrap;
     }
+    .galerie .popisek{
+        display: none;
+     }
     .foto{
         flex-basis: 50%;
     }
