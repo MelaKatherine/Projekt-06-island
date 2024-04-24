@@ -97,13 +97,13 @@ nav{
 }
 
 /* OBSAH */
-section h2{
+h2{
     font-size: 20px;
     position: relative;
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
-section h2::after{
+h2::after{
     content: ' ';
     display: inline-block;
     position: absolute;
@@ -113,7 +113,7 @@ section h2::after{
     left: -15px;
     bottom: 0;
 }
-section img {
+img {
     margin-top: 20px;
     width: 100%;
 }
@@ -127,6 +127,7 @@ section p{
 }
 
 .popisek{
+    font-size: 10px;
     color:silver;
     text-align: center;
 }
@@ -136,7 +137,15 @@ section p{
 }
 
 /* FOTOGALERIE */
-
+.foto .popisek{
+    color:grey;
+    font-weight: 700;
+}
+.popisek-copy{
+    font-size: 10px;
+    color:silver;
+    font-weight: 400;
+}
 
 
 
